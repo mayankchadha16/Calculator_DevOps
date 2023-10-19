@@ -60,7 +60,7 @@ public class Calculator {
             System.out.print("| Please enter a number: ");
             Integer x = in.nextInt();
 
-            System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + naturalLogCalc(x));
+            System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + Math.round(naturalLogCalc(x) * Math.pow(10, 3))/ Math.pow(10, 3));
             System.out.println("+------------------------------------------------------------+");
             System.out.println();
         }
@@ -103,10 +103,10 @@ public class Calculator {
     }
 
     public static Double naturalLogCalc(Integer x) {
-        return 3.0;
+        return Math.log(x);
     }
 
     public static Long powerCalc(Integer b, Integer p) {
-        return (long) 4;
+        return (long) Math.pow(b, p);
     }
 }
