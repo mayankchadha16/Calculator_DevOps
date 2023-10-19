@@ -1,8 +1,10 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Calculator {
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
 
         System.out.println("+--------------------------------+");
@@ -15,10 +17,12 @@ public class Calculator {
         System.out.println("| 4. Power function              |");
         System.out.println("+--------------------------------+");
 
+
         System.out.println();
         System.out.print("Your Choice: ");
         Integer option = in.nextInt();
         System.out.println();
+
 
         if (option == 1) {
             System.out.println("+------------------------------------------------+");
@@ -27,11 +31,12 @@ public class Calculator {
 
             System.out.print("| Please enter a number: ");
             Integer x = in.nextInt();
-
-            System.out.println("| Square root of the number " + x + " is: " + squareRootCalc(x));
+            
+            System.out.println("| Square root of the number " + x + " is: " + Math.round(squareRootCalc(x) * Math.pow(10, 3))/ Math.pow(10, 3));
             System.out.println("+------------------------------------------------+");
             System.out.println();
         }
+
 
         else if (option == 2) {
             System.out.println("+------------------------------------------------+");
@@ -46,6 +51,7 @@ public class Calculator {
             System.out.println();
         }
 
+
         else if (option == 3) {
             System.out.println("+------------------------------------------------------------+");
             System.out.println("| Natural logarithm (base e) Selected                        |");
@@ -58,6 +64,7 @@ public class Calculator {
             System.out.println("+------------------------------------------------------------+");
             System.out.println();
         }
+
 
         else if (option == 4) {
             System.out.println("+------------------------------------------------+");
@@ -74,6 +81,8 @@ public class Calculator {
             System.out.println("+------------------------------------------------+");
             System.out.println();
         } 
+
+
         else {
             System.out.println("+------------------------------------------------+");
             System.out.println("|Invalid Option Selected.                        |");
@@ -83,11 +92,10 @@ public class Calculator {
         }
 
         in.close();
-
     }
 
     public static Double squareRootCalc(Integer x) {
-        return 1.0;
+        return Math.sqrt(x);
     }
 
     public static Integer factorialCalc(Integer x) {
