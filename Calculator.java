@@ -17,7 +17,6 @@ public class Calculator {
         System.out.println("| 4. Power function              |");
         System.out.println("+--------------------------------+");
 
-
         System.out.println();
         System.out.print("Your Choice: ");
         Integer option = in.nextInt();
