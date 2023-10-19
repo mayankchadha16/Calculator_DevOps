@@ -46,7 +46,7 @@ public class Calculator {
             System.out.print("| Please enter a number: ");
             Integer x = in.nextInt();
 
-            System.out.println("| Factorial root of the number " + x + " is: " + factorialCalc(x));
+            System.out.println("| Factorial of the number " + x + " is: " + factorialCalc(x));
             System.out.println("+------------------------------------------------+");
             System.out.println();
         }
@@ -94,19 +94,19 @@ public class Calculator {
         in.close();
     }
 
-    public static Double squareRootCalc(Integer x) {
-        return Math.sqrt(x);
+    public static Double squareRootCalc(Integer n) {
+        return Math.sqrt(n);
     }
 
-    public static Integer factorialCalc(Integer x) {
-        return 2;
+    public static Long factorialCalc(Integer n) {
+        return (n == 1 || n == 0) ? 1: n * factorialCalc(n - 1); 
     }
 
     public static Double naturalLogCalc(Integer x) {
         return 3.0;
     }
 
-    public static Integer powerCalc(Integer b, Integer p) {
-        return 4;
+    public static Long powerCalc(Integer b, Integer p) {
+        return (long) 4;
     }
 }
