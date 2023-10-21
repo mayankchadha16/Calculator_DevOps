@@ -1,19 +1,131 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+import java.lang.Math;
+
 public class Main {
+
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Scanner in = new Scanner(System.in);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        displayMenu();
+        Integer option = getOption(in);
+
+        if (option == 1)
+            squareRootCalc(in);
+        else if (option == 2)
+            factorialCalc(in);
+        else if (option == 3)
+            naturalLogCalc(in);
+        else if (option == 4)
+            powerCalc(in);
+        else
+            invalidPrompt();
+
+        in.close();
+    }
+
+    public static Double squareRootHelper(Integer x) {
+        return Math.round(Math.sqrt(x) * Math.pow(10, 3)) / Math.pow(10, 3);
+    }
+
+    public static void squareRootCalc(Scanner in) {
+        System.out.println("+------------------------------------------------+");
+        System.out.println("| Square root function Selected                  |");
+        System.out.println("+------------------------------------------------+");
+
+        int x = getUserInput(in);
+
+        System.out.println("| Square root of the number " + x + " is: " + squareRootHelper(x));
+        System.out.println("+------------------------------------------------+");
+        System.out.println();
+    }
+
+    public static Integer factorialHelper(Integer n) {
+        return (n == 1 || n == 0) ? 1 : n * factorialHelper(n - 1);
+    }
+
+    public static void factorialCalc(Scanner in) {
+        System.out.println("+------------------------------------------------+");
+        System.out.println("| Factorial function Selected                    |");
+        System.out.println("+------------------------------------------------+");
+
+        int x = getUserInput(in);
+
+        System.out.println("| Factorial of the number " + x + " is: " + factorialHelper(x));
+        System.out.println("+------------------------------------------------+");
+        System.out.println();
+    }
+
+    public static Double naturalLogHelper(Integer x) {
+        return Math.round(Math.log(x) * Math.pow(10, 3)) / Math.pow(10, 3);
+    }
+
+    public static void naturalLogCalc(Scanner in) {
+        System.out.println("+------------------------------------------------------------+");
+        System.out.println("| Natural logarithm (base e) Selected                        |");
+        System.out.println("+------------------------------------------------------------+");
+
+        int x = getUserInput(in);
+
+        System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + naturalLogHelper(x));
+        System.out.println("+------------------------------------------------------------+");
+        System.out.println();
+    }
+
+    public static Integer powerHelper(Integer b, Integer p) {
+        return (int) Math.pow(b, p);
+    }
+
+    public static void powerCalc(Scanner in) {
+        System.out.println("+------------------------------------------------+");
+        System.out.println("| Power function function Selected               |");
+        System.out.println("+------------------------------------------------+");
+
+        System.out.print("| Please enter the base: ");
+        Integer b = in.nextInt();
+
+        System.out.print("| Please enter the power: ");
+        Integer p = in.nextInt();
+
+        System.out.println("| " + b + " to the power " + p + " is: " + powerHelper(b, p));
+        System.out.println("+------------------------------------------------+");
+        System.out.println();
+    }
+
+    public static void displayMenu() {
+        System.out.println("+--------------------------------+");
+        System.out.println("| Welcome to the Calculator!     |");
+        System.out.println("+--------------------------------+");
+        System.out.println("| Please select an Option Below: |");
+        System.out.println("| 1. Square root function        |");
+        System.out.println("| 2. Factorial function          |");
+        System.out.println("| 3. Natural logarithm (base e)  |");
+        System.out.println("| 4. Power function              |");
+        System.out.println("+--------------------------------+");
+    }
+
+    public static void invalidPrompt() {
+        System.out.println("+------------------------------------------------+");
+        System.out.println("|Invalid Option Selected.                        |");
+        System.out.println("|Exiting........                                 |");
+        System.out.println("+------------------------------------------------+");
+        System.out.println();
+    }
+
+    public static Integer getOption(Scanner in) {
+        System.out.println();
+        System.out.print("Your Choice: ");
+        Integer option = in.nextInt();
+        System.out.println();
+
+        return option;
+    }
+
+    public static Integer getUserInput(Scanner in) {
+        System.out.print("| Please enter a number: ");
+
+        return in.nextInt();
     }
 }
