@@ -13,7 +13,7 @@ public class Calculator {
         if (option == 1)
             squareRootCalc(in);
         else if (option == 2)
-            factorialHelper(in);
+            factorialCalc(in);
         else if (option == 3)
             naturalLogCalc(in);
         else if (option == 4)
@@ -24,34 +24,40 @@ public class Calculator {
         in.close();
     }
 
+    public static Double squareRootHelper(Integer x) {
+        return Math.round(Math.sqrt(x) * Math.pow(10, 3)) / Math.pow(10, 3);
+    }
+
     public static void squareRootCalc(Scanner in) {
         System.out.println("+------------------------------------------------+");
         System.out.println("| Square root function Selected                  |");
         System.out.println("+------------------------------------------------+");
 
-        System.out.print("| Please enter a number: ");
-        Integer x = in.nextInt();
+        int x = getUserInput(in);
 
-        System.out.println("| Square root of the number " + x + " is: " + Math.round(Math.sqrt(x) * Math.pow(10, 3)) / Math.pow(10, 3));
+        System.out.println("| Square root of the number " + x + " is: " + squareRootHelper(x));
         System.out.println("+------------------------------------------------+");
         System.out.println();
     }
 
-    public static Long factorialCalc(Integer n) {
-        return (n == 1 || n == 0) ? 1 : n * factorialCalc(n - 1);
+    public static Long factorialHelper(Integer n) {
+        return (n == 1 || n == 0) ? 1 : n * factorialHelper(n - 1);
     }
 
-    public static void factorialHelper(Scanner in) {
+    public static void factorialCalc(Scanner in) {
         System.out.println("+------------------------------------------------+");
         System.out.println("| Factorial function Selected                    |");
         System.out.println("+------------------------------------------------+");
 
-        System.out.print("| Please enter a number: ");
-        Integer x = in.nextInt();
+        int x = getUserInput(in);
 
-        System.out.println("| Factorial of the number " + x + " is: " + factorialCalc(x));
+        System.out.println("| Factorial of the number " + x + " is: " + factorialHelper(x));
         System.out.println("+------------------------------------------------+");
         System.out.println();
+    }
+
+    public static Double naturalLogHelper(Integer x) {
+        return Math.round(Math.log(x) * Math.pow(10, 3)) / Math.pow(10, 3);
     }
 
     public static void naturalLogCalc(Scanner in) {
@@ -59,12 +65,15 @@ public class Calculator {
         System.out.println("| Natural logarithm (base e) Selected                        |");
         System.out.println("+------------------------------------------------------------+");
 
-        System.out.print("| Please enter a number: ");
-        Integer x = in.nextInt();
+        int x = getUserInput(in);
 
-        System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + Math.round(Math.log(x) * Math.pow(10, 3)) / Math.pow(10, 3));
+        System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + naturalLogHelper(x));
         System.out.println("+------------------------------------------------------------+");
         System.out.println();
+    }
+
+    public static Long powerHelper(Integer b, Integer p) {
+        return (long) Math.pow(b, p);
     }
 
     public static void powerCalc(Scanner in) {
@@ -78,7 +87,7 @@ public class Calculator {
         System.out.print("| Please enter the power: ");
         Integer p = in.nextInt();
 
-        System.out.println("| " + b + " to the power " + p + " is: " + (long) Math.pow(b, p));
+        System.out.println("| " + b + " to the power " + p + " is: " + powerHelper(b, p));
         System.out.println("+------------------------------------------------+");
         System.out.println();
     }
@@ -110,5 +119,12 @@ public class Calculator {
         System.out.println();
 
         return option;
+    }
+
+    public static Integer getUserInput(Scanner in) {
+        System.out.print("| Please enter a number: ");
+        Integer x = in.nextInt();
+
+        return x;
     }
 }
