@@ -1,10 +1,15 @@
 package org.example;
 
 import java.util.Scanner;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import java.lang.Math;
 
 public class Main {
 
+    private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
