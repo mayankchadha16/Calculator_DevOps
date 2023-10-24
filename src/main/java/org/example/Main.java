@@ -32,6 +32,7 @@ public class Main {
     }
 
     public static Double squareRootHelper(Integer x) {
+        logger.info("Calculating square root for x = " + x);
         return Math.round(Math.sqrt(x) * Math.pow(10, 3)) / Math.pow(10, 3);
     }
 
@@ -64,6 +65,7 @@ public class Main {
     }
 
     public static Double naturalLogHelper(Integer x) {
+        logger.info("Calculating natural logarithm (base e) for x = " + x);
         return Math.round(Math.log(x) * Math.pow(10, 3)) / Math.pow(10, 3);
     }
 
@@ -80,6 +82,7 @@ public class Main {
     }
 
     public static Integer powerHelper(Integer b, Integer p) {
+        logger.info("Calculating power for base b = " + b + " and power p = " + p);
         return (int) Math.pow(b, p);
     }
 
