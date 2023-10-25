@@ -1,0 +1,96 @@
+2023-10-25 16:07:41.407 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:07:41.445 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 10
+2023-10-25 16:07:41.445 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:07:41.452 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:07:41.462 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 2
+2023-10-25 16:07:41.462 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:07:41.463 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:07:41.463 [main] INFO  org.example.Main - Calculating factorial of x = 4
+2023-10-25 16:07:41.463 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:07:41.464 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:07:41.464 [main] INFO  org.example.Main - Calculating square root for x = 4
+2023-10-25 16:07:41.465 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:09:05.845 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:09:05.870 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 10
+2023-10-25 16:09:05.870 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:09:05.875 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:09:05.875 [main] INFO  org.example.Main - Calculating factorial of x = 4
+2023-10-25 16:09:05.875 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:09:05.876 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:09:05.876 [main] INFO  org.example.Main - Calculating factorial of x = 5
+2023-10-25 16:09:05.876 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:09:05.877 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:09:05.877 [main] INFO  org.example.Main - Calculating square root for x = 4
+2023-10-25 16:09:05.877 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:09:05.878 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:09:05.884 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 2
+2023-10-25 16:09:05.884 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:09:05.885 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:09:05.885 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 3
+2023-10-25 16:09:05.885 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:09:54.621 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:09:54.670 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 10
+2023-10-25 16:09:54.670 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:09:54.679 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:09:54.679 [main] INFO  org.example.Main - Calculating factorial of x = 4
+2023-10-25 16:09:54.679 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:09:54.680 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:09:54.680 [main] INFO  org.example.Main - Calculating factorial of x = 5
+2023-10-25 16:09:54.680 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:09:54.681 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:09:54.681 [main] INFO  org.example.Main - Calculating square root for x = 4
+2023-10-25 16:09:54.681 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:09:54.682 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:09:54.682 [main] INFO  org.example.Main - Calculating square root for x = 8
+2023-10-25 16:09:54.682 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:09:54.682 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:09:54.691 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 2
+2023-10-25 16:09:54.691 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:09:54.692 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:09:54.692 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 3
+2023-10-25 16:09:54.692 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:11:05.439 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:11:05.474 [main] INFO  org.example.Main - Calculating factorial of x = 4
+2023-10-25 16:11:05.474 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:11:05.483 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:11:05.483 [main] INFO  org.example.Main - Calculating factorial of x = 5
+2023-10-25 16:11:05.483 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:11:05.484 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:11:05.484 [main] INFO  org.example.Main - Calculating square root for x = 4
+2023-10-25 16:11:05.484 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:11:05.485 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:11:05.485 [main] INFO  org.example.Main - Calculating square root for x = 8
+2023-10-25 16:11:05.485 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:11:05.486 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:11:05.486 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 10
+2023-10-25 16:11:05.486 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:11:05.487 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:11:05.488 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 100
+2023-10-25 16:11:05.488 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:11:05.523 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:11:05.528 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 2
+2023-10-25 16:11:05.528 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:11:05.529 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:11:05.529 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 3
+2023-10-25 16:11:05.529 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:11:40.236 [main] INFO  org.example.Main - START OP: LOG
+2023-10-25 16:11:40.270 [main] INFO  org.example.Main - Calculating natural logarithm (base e) for x = 10
+2023-10-25 16:11:40.270 [main] INFO  org.example.Main - END OP: LOG
+2023-10-25 16:11:40.275 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:11:40.276 [main] INFO  org.example.Main - Calculating factorial of x = 4
+2023-10-25 16:11:40.276 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:11:40.276 [main] INFO  org.example.Main - START OP: FACT
+2023-10-25 16:11:40.276 [main] INFO  org.example.Main - Calculating factorial of x = 5
+2023-10-25 16:11:40.277 [main] INFO  org.example.Main - END OP: FACT
+2023-10-25 16:11:40.277 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:11:40.277 [main] INFO  org.example.Main - Calculating square root for x = 4
+2023-10-25 16:11:40.277 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:11:40.278 [main] INFO  org.example.Main - START OP: SQROOT
+2023-10-25 16:11:40.278 [main] INFO  org.example.Main - Calculating square root for x = 8
+2023-10-25 16:11:40.278 [main] INFO  org.example.Main - END OP: SQROOT
+2023-10-25 16:11:40.279 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:11:40.284 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 2
+2023-10-25 16:11:40.285 [main] INFO  org.example.Main - END OP: POWER
+2023-10-25 16:11:40.285 [main] INFO  org.example.Main - START OP: POWER
+2023-10-25 16:11:40.285 [main] INFO  org.example.Main - Calculating power for base b = 4 and power p = 3
+2023-10-25 16:11:40.285 [main] INFO  org.example.Main - END OP: POWER

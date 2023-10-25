@@ -12,6 +12,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
 
+        logger.info("Start of Execution");
         Scanner in = new Scanner(System.in);
 
         displayMenu();
@@ -32,7 +33,9 @@ public class Main {
     }
 
     public static Double squareRootHelper(Integer x) {
+        logger.info("START OP: SQROOT");
         logger.info("Calculating square root for x = " + x);
+        logger.info("END OP: SQROOT");
         return Math.round(Math.sqrt(x) * Math.pow(10, 3)) / Math.pow(10, 3);
     }
 
@@ -49,7 +52,13 @@ public class Main {
     }
 
     public static Integer factorialHelper(Integer n) {
-        return (n == 1 || n == 0) ? 1 : n * factorialHelper(n - 1);
+        logger.info("START OP: FACT");
+        logger.info("Calculating factorial of x = " + n);
+        int res = 1, i; 
+        for (i = 2; i <= n; i++) 
+        res *= i; 
+        logger.info("END OP: FACT");
+        return res; 
     }
 
     public static void factorialCalc(Scanner in) {
@@ -65,7 +74,9 @@ public class Main {
     }
 
     public static Double naturalLogHelper(Integer x) {
+        logger.info("START OP: LOG");
         logger.info("Calculating natural logarithm (base e) for x = " + x);
+        logger.info("END OP: LOG");
         return Math.round(Math.log(x) * Math.pow(10, 3)) / Math.pow(10, 3);
     }
 
@@ -75,14 +86,16 @@ public class Main {
         System.out.println("+------------------------------------------------------------+");
 
         int x = getUserInput(in);
-
+        
         System.out.println("| Natural logarithm (base e) of the number " + x + " is: " + naturalLogHelper(x));
         System.out.println("+------------------------------------------------------------+");
         System.out.println();
     }
 
     public static Integer powerHelper(Integer b, Integer p) {
+        logger.info("START OP: POWER");
         logger.info("Calculating power for base b = " + b + " and power p = " + p);
+        logger.info("END OP: POWER");
         return (int) Math.pow(b, p);
     }
 
