@@ -30,9 +30,15 @@ public class MainTest {
     }
 
     @Test
-    public void testLog() {
+    public void testLog1() {
         Double x = Main.naturalLogHelper(10);
         Assert.assertEquals(x, 2.303, 1e-10);
+    }
+
+    @Test
+    public void testLog2() {
+        Double x = Main.naturalLogHelper(5);
+        Assert.assertEquals(x, 1.609, 1e-10);
     }
 
     @Test
