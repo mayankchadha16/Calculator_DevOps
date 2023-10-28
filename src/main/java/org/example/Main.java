@@ -33,6 +33,10 @@ public class Main {
     }
 
     public static Double squareRootHelper(Integer x) {
+        if(x < 0) {
+            logger.error("Invalid Input in SQROOT" + x);
+            return Double.NaN;
+        }
         logger.info("START OP: SQROOT");
         logger.info("Calculating square root for x = " + x);
         logger.info("END OP: SQROOT");
@@ -52,6 +56,10 @@ public class Main {
     }
 
     public static Integer factorialHelper(Integer n) {
+        if(n < 0) {
+            logger.error("Invalid Input in FACT" + n);
+            return -1;
+        }
         logger.info("START OP: FACT");
         logger.info("Calculating factorial of x = " + n);
         int res = 1, i; 
@@ -74,6 +82,10 @@ public class Main {
     }
 
     public static Double naturalLogHelper(Integer x) {
+        if(x <= 0) {
+            logger.error("Invalid Input in LOG" + x);
+            return Double.NaN;
+        }
         logger.info("START OP: LOG");
         logger.info("Calculating natural logarithm (base e) for x = " + x);
         logger.info("END OP: LOG");

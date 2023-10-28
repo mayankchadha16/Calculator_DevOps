@@ -30,6 +30,12 @@ public class MainTest {
     }
 
     @Test
+    public void testFact3() {
+        int x = Main.factorialHelper(-1);
+        Assert.assertEquals(x, -1);
+    }
+
+    @Test
     public void testLog1() {
         Double x = Main.naturalLogHelper(10);
         Assert.assertEquals(x, 2.303, 1e-10);
